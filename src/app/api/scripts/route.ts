@@ -18,12 +18,5 @@ export async function GET() {
             },
         });
     }
-    const filePath = path.join(process.cwd(), 'src', 'scripts', 'voicesearch.js');
-        const fileContents = fs.readFileSync(filePath, 'utf8');
-        
-        return new NextResponse(fileContents, {
-            headers: {
-                'Content-Type': 'application/javascript'
-            },
-        });
+    return NextResponse.json({'erro':'não autorizado'});
 }
