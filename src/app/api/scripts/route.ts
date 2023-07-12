@@ -8,7 +8,7 @@ export const revalidate = 0;
 export async function GET() {
     const headersList = headers();
     const referer = headersList.get('referer');
-    if(referer == 'http://1225878.commercesuite.com.br/'){
+    if(referer == 'https://1225878.commercesuite.com.br/'){
         const filePath = path.join(process.cwd(), 'src', 'scripts', 'voicesearch.js');
         const fileContents = fs.readFileSync(filePath, 'utf8');
         
