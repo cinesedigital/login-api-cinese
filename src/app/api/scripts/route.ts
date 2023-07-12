@@ -3,6 +3,8 @@ import path from "path";
 import { NextResponse } from 'next/server';
 import { headers } from "next/headers";
 
+export const revalidate = 3
+
 export async function GET(res: Response) {
     const headersList = headers();
     const referer = headersList.get('referer');
