@@ -5,7 +5,7 @@ import { headers } from "next/headers";
 
 export const revalidate = 0;
 
-export async function GET(res: Response) {
+export async function GET() {
     const headersList = headers();
     const referer = headersList.get('referer');
     if(referer == 'http://1225878.commercesuite.com.br/'){
