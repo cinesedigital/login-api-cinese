@@ -3,7 +3,7 @@ import path from "path";
 import { NextResponse } from 'next/server';
 import { headers } from "next/headers";
 
-export const revalidate = 3
+export const revalidate = 0;
 
 export async function GET(res: Response) {
     const headersList = headers();
