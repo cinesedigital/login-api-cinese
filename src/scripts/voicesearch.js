@@ -8,7 +8,6 @@ btn.css('right', '35px');
 btn.css('background', '#FFF');
 btn.css('border-radius', '100%');
 $('body').append(btn);
-
 const btnSearch = jQuery(".mic__button");
 const input = jQuery('[name="palavra_busca"]');
 if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
